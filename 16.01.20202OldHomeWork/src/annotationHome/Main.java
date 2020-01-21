@@ -16,7 +16,7 @@ public class Main {
         main.writeInFile(auto,auto.getClass());
 
     }
-//Не записує в файл.
+
     public void writeInFile(Object o, Class c) throws IOException, IllegalAccessException {
         FileWriter writer = new FileWriter("fileForAnnotation.txt");
        // Writer writer = new BufferedWriter(new FileWriter("fileForAnnotation.txt"));

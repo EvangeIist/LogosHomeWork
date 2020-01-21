@@ -1,6 +1,6 @@
 package threadsHome;
 
-import java.util.Random;
+
 import java.util.Scanner;
 
 public class MyThread extends Thread {
@@ -13,11 +13,12 @@ public class MyThread extends Thread {
 
     @Override
     public void run() {
-        System.out.println("How many number do you want to see?");
+        System.out.println("Скільки чисел Фібоначчі вивести?");
         int ask = scn.nextInt();
+        System.out.println("Потік Thread: ");
         System.out.print(a + " " + b + " ");
 
-        for (int i = 3; i < ask; i++) {
+        for (int i = 3; i < ask + 1; i++) {
 
 
             try {
@@ -33,6 +34,7 @@ public class MyThread extends Thread {
             b = c;
 
         }
+        System.out.println();
     }
 
 }
